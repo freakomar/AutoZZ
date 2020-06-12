@@ -1,0 +1,212 @@
+
+body {
+    background-color: #f8f8f8; 
+    /*знаю что не совсем правильно использовать селектор body, 
+    но на данном этапе это быстрее и удобнее*/
+}
+header {
+    height: 60px;
+    border-bottom: 1px solid grey;
+    padding: 10px;
+    margin: 0 auto;
+    background-image: url(images/header_bg.jpg);
+    background-size: 100% auto;
+}
+
+footer {
+    height: 60px;
+    border-top: 1px solid grey;
+    text-align: right;
+    padding: 10px;
+    margin-top: 10px;
+}
+/*меню*/
+.menu {
+    float: right;
+    padding-left: 0;
+}
+
+.menu li > a {
+    color: #404040;
+    background-color: #ccc;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.menu li > a:hover {
+    color: #222;
+    background-color: #afafaf;
+}
+
+.menu li > a:active {
+    color: black;
+}
+
+.menu li {
+    float: left;
+    color: #707070;
+    background-color: #dedede;
+    font-weight: bold;
+    list-style-type: none;
+    width: 150px;
+    height: 30px;
+    border: 1px solid #404040;
+    text-align: center;
+    line-height: 30px;
+}
+
+.menu li:first-child {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.menu li:first-child > a {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.menu li:last-child {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.menu li:last-child > a {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.logo {
+    float: left;
+    height: 55px;
+}
+/*Главная страница*/
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+/* страница отдельного товара*/
+.description {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    bottom: 90px;
+}
+.description h3 {
+    width: 300px;
+}
+
+.unitHeading {
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+}
+
+.shortDesc {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.fullDesc {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.specificImg {
+    outline: 1px solid grey;
+}
+
+.specificImg:hover {
+    outline: none;
+}
+
+.characteristic {
+    color: #000;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.characteristic tr, td, th {
+    border: 1px solid #404040;
+    width: 125px;
+    height: 24px;
+}
+.buy {
+    color: #333;
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: radial-gradient(#fafafa, #afafaf);
+}
+
+.buy:hover {
+    background: radial-gradient(#999, #333);
+    color: #222;
+    border-radius: 15px;
+}
+
+.buy:active {
+    background: radial-gradient(#fafafa, #afafaf);
+    color: #000;
+    border-radius: 15px;
+}
+
+/* Страница контактов*/
+
+.specific li {
+    list-style-image: url(images/check1.png);
+    color: #404040;
+}
+
+.mailto > textarea {
+    width: 280px;
+    height: 280px;
+    text-transform: capitalize;
+}
+
+.mailto > input {
+    font-size: 14px;
+    font-style: italic;
+    color: #404040;
+    text-transform: capitalize;
+}
+
+.mailto > input[type="email"]:focus {
+    color: black;
+    background-color: #afafaf;
+}
+
+.contacts {
+    color: #404040;
+    list-style-type: square;
+}
+
+/* страница каталог*/
+.catalog {
+    display: flex;
+}
+
+.catalog img {
+    height: 100px;
+}
+
+.catalog > div {
+    margin: 30px;
+}
+
+.catalog a {
+    text-decoration: none;
+    color: #404040;
+}
+
+.catalog-Img {
+    outline: 1px solid grey;
+}
