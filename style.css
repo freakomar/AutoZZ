@@ -1,29 +1,52 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
 
+html, body {
+    height: 100%;
+}
 body {
     background-color: #f8f8f8; 
     /*знаю что не совсем правильно использовать селектор body, 
     но на данном этапе это быстрее и удобнее*/
 }
 header {
-    height: 60px;
+    height: 80px;
     border-bottom: 1px solid grey;
     padding: 10px;
     margin: 0 auto;
     background-image: url(images/header_bg.jpg);
     background-size: 100% auto;
 }
-
+.container {
+    width: 95%;
+    margin: 0 auto;
+    min-height: 100%;
+    padding-bottom: 60px;
+}
 footer {
+    width: 95%;
+    margin: auto;
     height: 60px;
     border-top: 1px solid grey;
     text-align: right;
-    padding: 10px;
-    margin-top: 10px;
+    padding: 10px 10px 0 0;
+    margin-top: -60px;
 }
+
+
+
+/*Главная страница*/
+.main, main > h1 {
+    margin: 20px 0;
+}
+
 /*меню*/
 .menu {
     float: right;
     padding-left: 0;
+    margin-top: 15px;
 }
 
 .menu li > a {
@@ -78,11 +101,6 @@ footer {
 .logo {
     float: left;
     height: 55px;
-}
-/*Главная страница*/
-.container {
-    width: 95%;
-    margin: auto;
 }
 
 /* страница отдельного товара*/
@@ -192,6 +210,7 @@ footer {
 /* страница каталог*/
 .catalog {
     display: flex;
+    text-align: center;
 }
 
 .catalog img {
@@ -200,6 +219,10 @@ footer {
 
 .catalog > div {
     margin: 30px;
+}
+
+.catalog div:first-child {
+    margin-left: 0;
 }
 
 .catalog a {
