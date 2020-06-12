@@ -38,10 +38,15 @@ footer {
 
 
 /*Главная страница*/
-.main, main > h1 {
+.main, .main > h1, button {
     margin: 20px 0;
 }
-
+.main > h2, h3 {
+    margin: 10px 0;
+}
+.main > table {
+    margin-top: 15px;
+}
 /*меню*/
 .menu {
     float: right;
@@ -184,13 +189,19 @@ footer {
     color: #404040;
 }
 
+.mailto {
+    margin: 10px 0;
+}
+
 .mailto > textarea {
     width: 280px;
     height: 280px;
     text-transform: capitalize;
+    margin: 3px 0;
 }
 
 .mailto > input {
+    margin: 3px 0;
     font-size: 14px;
     font-style: italic;
     color: #404040;
